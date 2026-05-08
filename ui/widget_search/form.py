@@ -36,7 +36,6 @@ class LegacySearchForm(Gtk.Box):
         self.filter_popover = Gtk.Popover()
         self.filter_button.set_popover(self.filter_popover)
         self.filter_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        self.filter_box.set_margin_all(10) # Fixed in later version or use manual margins
         self._set_margins(self.filter_box)
         self.filter_popover.set_child(self.filter_box)
 
